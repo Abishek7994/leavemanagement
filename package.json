@@ -1,0 +1,26 @@
+{
+  "name": "leavemanagementsystem",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env app.js",
+    "server": "node --env-file-if-exists=.env app.js",
+    "dev": "node --env-file-if-exists=.env app.js",
+    "lint": "eslint .",
+    "test": "node --env-file-if-exists=.env --test tests/api.test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mongoose": "^9.11.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.10.0",
+    "globals": "^17.12.0"
+  }
+}
